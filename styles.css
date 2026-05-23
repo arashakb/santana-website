@@ -426,4 +426,17 @@ p { margin: 0 0 1em; }
     opacity: 0.85;
 }
 .footer p { margin: 0.25rem 0; font-size: 0.85rem; letter-spacing: 0.05em; }
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 0 0 1.25rem !important;
+}
+.footer__social a {
+    color: var(--cream);
+    opacity: 0.85;
+    transition: opacity 0.2s, transform 0.2s;
+    display: inline-flex;
+}
+.footer__social a:hover { opacity: 1; transform: translateY(-2px); }
 .footer .muted { color: rgba(243, 238, 234, 0.55); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; }
