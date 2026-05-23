@@ -3,7 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head><body>
-    <h1>Hello World</h1>
+    <title>Carmen Santana Beauty Center</title>
+    <meta name="description" content="Carmen Santana Beauty Center — full-service beauty salon in Everett, MA. Hair, color, styling, and care in a warm, welcoming space.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="nav">
+        <a href="#top" class="nav__brand">Carmen Santana</a>
+        <nav class="nav__links">
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#visit">Visit</a>
+        </nav>
+    </header>
+
+    <section id="top" class="hero">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__content">
+            <p class="eyebrow">Beauty Center · Everett, MA</p>
+            <h1>Carmen Santana<br><em>Beauty Center</em></h1>
+            <p class="hero__sub">A warm, welcoming space for hair, color, and care — crafted by stylists who treat every guest like family.</p>
+            <a href="#visit" class="btn">Plan your visit</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="section__head">
+            <p class="eyebrow">Our Work</p>
+            <h2>A look inside</h2>
+        </div>
+        <div class="gallery">
+            <div class="gallery__item gallery__item--tall" data-label="Cut & Style"></div>
+            <div class="gallery__item" data-label="Color"></div>
+            <div class="gallery__item" data-label="Treatments"></div>
+            <div class="gallery__item gallery__item--wide" data-label="Inside the salon"></div>
+            <div class="gallery__item" data-label="Bridal"></div>
+            <div class="gallery__item" data-label="Care"></div>
+        </div>
+        <p class="gallery__note">Photos coming soon — follow along on social for the latest looks.</p>
+    </section>
+
+    <section id="about" class="section section--cream">
+        <div class="about">
+            <div class="about__media">
+                <div class="about__portrait"></div>
+            </div>
+            <div class="about__body">
+                <p class="eyebrow">About</p>
+                <h2>Meet Carmen</h2>
+                <p>For years, Carmen has been the hands and heart behind the chair — turning a small dream into a beauty home for the Everett community. Every appointment is built around listening first, then crafting a look that feels honestly yours.</p>
+                <p>Our team brings together stylists who specialize in cut, color, blowouts, and care for every hair type and texture.</p>
+            </div>
+        </div>
+
+        <div class="team">
+            <article class="team__card">
+                <div class="team__photo"></div>
+                <h3>Carmen</h3>
+                <p>Owner &amp; Lead Stylist</p>
+            </article>
+            <article class="team__card">
+                <div class="team__photo"></div>
+                <h3>Stylist Name</h3>
+                <p>Color Specialist</p>
+            </article>
+            <article class="team__card">
+                <div class="team__photo"></div>
+                <h3>Stylist Name</h3>
+                <p>Cut &amp; Style</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="visit" class="section">
+        <div class="section__head">
+            <p class="eyebrow">Visit</p>
+            <h2>Come say hello</h2>
+        </div>
+
+        <div class="visit">
+            <div class="visit__info">
+                <div class="info-block">
+                    <h3>Address</h3>
+                    <p>Carmen Santana Beauty Center<br>Everett, MA</p>
+                    <a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Carmen+Santana+Beauty+Center/@42.4205145,-71.0489601,17z/data=!3m1!4b1!4m6!3m5!1s0x89e371f5367647a1:0x446c9ce001cf05ff!8m2!3d42.4205146!4d-71.0440892">Open in Google Maps →</a>
+                </div>
+
+                <div class="info-block">
+                    <h3>Hours</h3>
+                    <ul class="hours">
+                        <li><span>Tue – Fri</span><span>10:00 – 7:00</span></li>
+                        <li><span>Saturday</span><span>9:00 – 6:00</span></li>
+                        <li><span>Sunday</span><span>10:00 – 4:00</span></li>
+                        <li><span>Monday</span><span>Closed</span></li>
+                    </ul>
+                    <p class="muted">Hours subject to change — please confirm by phone.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Book or call</h3>
+                    <p><a class="link" href="tel:+10000000000">(000) 000-0000</a></p>
+                    <p><a class="link" href="mailto:hello@carmensantanabeauty.com">hello@carmensantanabeauty.com</a></p>
+                </div>
+            </div>
+
+            <div class="visit__map">
+                <iframe
+                    title="Carmen Santana Beauty Center on Google Maps"
+                    src="https://www.google.com/maps?q=Carmen+Santana+Beauty+Center,+Everett+MA&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Carmen Santana Beauty Center</p>
+        <p class="muted">Crafted with care in Everett, MA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
