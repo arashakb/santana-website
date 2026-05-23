@@ -318,6 +318,55 @@ p { margin: 0 0 1em; }
     .team { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 
+/* Careers */
+.careers {
+    background: var(--mauve);
+    color: var(--white);
+    padding: 6rem clamp(1.5rem, 6vw, 5rem);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.careers::before {
+    content: "";
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 360px; height: 360px;
+    border-radius: 50%;
+    background: var(--mauve-deep);
+    filter: blur(80px);
+    opacity: 0.5;
+    pointer-events: none;
+}
+.careers::after {
+    content: "";
+    position: absolute;
+    bottom: -120px; left: -120px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: var(--silver);
+    filter: blur(80px);
+    opacity: 0.25;
+    pointer-events: none;
+}
+.careers__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    margin: 0 auto;
+}
+.careers h2 { color: var(--white); }
+.careers__lead {
+    font-family: var(--serif);
+    font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+    font-style: italic;
+    color: var(--silver);
+    margin: 1.5rem auto 2.5rem;
+    line-height: 1.7;
+}
+.eyebrow--light { color: var(--silver); }
+.section__divider--light { background: var(--silver); opacity: 0.6; }
+
 /* Visit */
 .visit {
     display: grid;
