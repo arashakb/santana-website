@@ -383,6 +383,17 @@ p { margin: 0 0 1em; }
     font-family: var(--sans);
     font-weight: 500;
 }
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--mauve);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.social-link:hover { color: var(--mauve-deep); }
+.social-link span { border-bottom: 1px solid currentColor; padding-bottom: 1px; }
+
 .hours { list-style: none; padding: 0; margin: 0 0 0.5rem; }
 .hours li {
     display: flex;
