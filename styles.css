@@ -437,6 +437,26 @@ p { margin: 0 0 1em; }
     opacity: 0.85;
 }
 .footer p { margin: 0.25rem 0; font-size: 0.85rem; letter-spacing: 0.05em; }
+.footer__rating { margin: 0 0 1rem !important; }
+.footer__rating a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+.footer__rating a:hover { opacity: 1; }
+.footer__rating .stars {
+    color: #f5c451;
+    letter-spacing: 0.08em;
+    font-size: 0.95rem;
+}
+.footer__rating .rating-text { border-bottom: 1px solid rgba(243,238,234,0.4); padding-bottom: 1px; }
+
 .footer__social {
     display: flex;
     justify-content: center;
